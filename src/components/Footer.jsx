@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='w-full h-[100px] bg-[#1F1F1F] flex items-center justify-around  px-4 py-2 '>
         <div className='location flex gap-2 items-center'>
-            <i class="ri-map-pin-line text-[#98D3E8] text-2xl"></i>
+            <i className="ri-map-pin-line text-[#98D3E8] text-2xl"></i>
                 <div className='text-white'>
                     <h2 className='font-semibold'>Find us</h2>
                     <h2>Pune,maharastra</h2>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
              <div className='location flex gap-2 items-center'>
-            <i class="ri-cellphone-fill text-[#98D3E8] text-2xl"></i>
+            <i className="ri-cellphone-fill text-[#98D3E8] text-2xl"></i>
                 <div className='text-white'>
                     <h2 className='font-semibold'>Call us</h2>
                     <h2>+91 756 660 381 68</h2>
@@ -30,7 +30,7 @@ const Footer = () => {
 
 
              <div className='location flex gap-2 items-center'>
-            <i class="ri-mail-line text-[#98D3E8] text-2xl"></i>
+            <i className="ri-mail-line text-[#98D3E8] text-2xl"></i>
                 <div className='text-white'>
                     <h2 className='font-semibold'>Mail us</h2>
                     <h2>Contact@mail.com</h2>

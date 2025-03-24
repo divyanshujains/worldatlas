@@ -13,7 +13,7 @@ const About = () => {
      </h2>
      <div className=' w-full px-10 py-4 flex flex-wrap gap-6 '>
 
-      {countryfacts.map(function(elem ,idx){
+      {countryfacts.map(function(elem ,idx) {
        return  <div key={idx} className='card w-[300px]  bg-[#1F1F1F]  text-white p-2  rounded flex flex-col gap-2 mr-0.5 '>
         <p className='countryname text-white font-semibold'>{elem.countryName}</p>
         <p>
