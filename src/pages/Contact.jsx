@@ -15,15 +15,16 @@ const handleFormSubmit = (formData) => {
   return (
     <div>
        <Navbar />
-          <div className="flex items-center justify-center min-h-screen bg-black px-4">
-      <div className="w-full max-w-lg  p-8 ">
-        <h2 className="text-4xl font-bold text-center text-white mb-6">Contact Us</h2>
+          <div className="flex items-start  justify-center min-h-screen bg-[#98D3E8]  ">
+      <div className="w-full max-w-lg mt-16  p-6 bg-[#1F1F1F] rounded  ">
+        <h2 className="text-4xl font-bold text-center text-white ">Contact Us</h2>
 
         <form action={handleFormSubmit} className="space-y-4">
           {/* Name Input */}
           <div>
             <label className="block text-white mb-1">Your Name</label>
             <input
+            name='name'
               type="text"
               className="w-full p-3 border border-white text-white  outline-none"
               placeholder="Enter your name"
@@ -37,6 +38,7 @@ const handleFormSubmit = (formData) => {
               type="email"
               className="w-full p-3 border border-white text-white  outline-none"
               placeholder="Enter your email"
+              name='email'
             />
           </div>
 
@@ -44,9 +46,10 @@ const handleFormSubmit = (formData) => {
           <div>
             <label className="block text-white mb-1">Message</label>
             <textarea
-              rows="5"
+              rows="3"
               className="w-full p-3 border border-white text-white outline-none"
               placeholder="Type your message here..."
+              name='description'
             ></textarea>
           </div>
 

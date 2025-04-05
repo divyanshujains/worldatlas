@@ -10,38 +10,22 @@ const Facts = () => {
       Here are the Intresting Facts  <br />
       we're proud of
      </h2>
-     <div className=' w-full px-10 py-4 flex flex-wrap gap-6 '>
-
-      {countryfacts.map(function(elem ,idx){
-       return  <div key={idx} className='card w-[300px]  bg-[#1F1F1F]  text-white p-2  rounded flex flex-col gap-2 mr-0.5 '>
-        <p className='countryname text-white font-semibold'>{elem.countryName}</p>
-        <p>
-          <span>Capital:</span>
-          <span>{elem.capital}</span>
-        </p>
-        
-        <p>
-          <span>Population:</span>
-          <span>{elem.population}</span>
-        </p>
-        
-        <p>
-          <span>intrestingfact:</span>
-          <span>{elem.interestingFact}</span>
-        </p>
-   
-        
-
+   <div className='w-full px-10 py-6 flex flex-wrap  justify-center bg-[#98D3E8]'>
+  {countryfacts.map((elem, idx) => (
+    <div 
+      key={idx} 
+      className='card w-[280px] bg-[#1F1F1F] text-white p-4 m-2 rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300'
+    >
+      <p className='countryname text-white font-bold text-lg border-b border-gray-600 pb-2'>{elem.countryName}</p>
+      <div className='mt-3 space-y-2 text-gray-300'>
+        <p className='flex justify-between '><span className='font-semibold'>Capital:</span> <span>{elem.capital}</span></p>
+        <p className='flex justify-between'><span className='font-semibold'>Population:</span> <span>{elem.population}</span></p>
+        <p className='flex justify-between'><span className='font-semibold text-sm '>FACTS: </span> <span className='text-sm italic '>{elem.interestingFact}</span></p>
       </div>
-        
-        
+    </div>
+  ))}
+</div>
 
-      })}
-
-     
-
-
-     </div>
       
     </div>
     </>
